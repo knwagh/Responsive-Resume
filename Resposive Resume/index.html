@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-content {
+            min-height: 1200px;
+            width: 90%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 300px 700px;
+        }
+        
+        .left-section {
+            grid-column: span 1;
+            font-size: large;
+            font-weight: 500;
+            background-color: rgb(0, 102, 133);
+            color: rgb(255, 255, 255);
+        }
+        
+        .left-content {
+            padding: 1rem;
+        }
+        
+        .profile-details {
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .profile-image {
+            display: block;
+            margin: auto;
+            width: 60%;
+            height: auto;
+            border: 5px solid white;
+            border-radius: 30%;
+            box-shadow: 0 0 20px 1px white;
+            overflow: hidden;
+            cursor: grab;
+        }
+        
+        .profile-image img {
+            height: 100px;
+            width: auto;
+            object-fit: fill;
+        }
+        
+        .profile-image img:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in;
+        }
+        
+        .name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.02px;
+            padding: 0.8rem;
+        }
+        
+        .designation {
+            font-size: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 0.5rem;
+        }
+        
+        .description {
+            font-size: .75rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1rem;
+        }
+        
+        .icon {
+            border: 1px solid white;
+            margin: 20px;
+            width: 30px;
+            height: 30px;
+        }
+        
+        .skills {
+            font-size: 0.75rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1rem .5rem;
+        }
+        
+        .skill-name {
+            font-size: 0.65rem;
+            /* font-weight: 0.65 rem; */
+            text-align: left;
+            padding-bottom: 0.5rem;
+        }
+        
+        .progress-bar {
+            border: 1px white solid;
+            height: 4px;
+        }
+        
+        .right-main-content {
+            padding: 2rem 3rem;
+        }
+        
+        .right-section {
+            grid-column: span 1 / span 2;
+            font-size: large;
+            font-weight: 500;
+            background-color: azure;
+            color: rgb(0, 102, 133);
+        }
+        
+        .right-title {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: .5rem;
+            letter-spacing: 1px;
+        }
+        
+        @media screen and (max-width: 673px) {
+            .main-content {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+
+
+
+    <main class="main-content">
+        <section class="left-section">
+            <div class="left-content">
+                <div class="profile-details">
+                    <div class="profile-image">
+                        <img src="https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives-768x492.png" alt="profile-image">
+                    </div>
+                    <div class="name">Lorem ipsum</div>
+                    <div class="designation">Lorem ipsum Lorem ipsum</div>
+                    <hr>
+                    <div class="description">Lorem ipsum | Lorem ipsum</div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="personal-details">
+                            <div class="email">Email: lorem.ipsum@gmail.com</div>
+                            <div class="mobile">Mobile: +91-Loremipsum</div>
+                        </div>
+                        <div class="social-media">
+                            <div class="social-media-icon">
+                                <a href="https://www.linkedin.com"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a>
+                                <a href='https://www.github.com'><img class='icon' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills">
+                    <h2 class="skills-title">SKILLS</h2>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style='width:90%'>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style='width:80%'>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style='width:65%'>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <h3>React</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style='width:44%'>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="right-section">
+            <div class="right-main-content">
+                <section class="about sect">
+                    <h2 class="right-title">About Me</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatibus illum dicta ullam expedita, fuga dolorum provident consequuntur repudiandae modi placeat libero veniam at ut. Placeat excepturi, alias cum impedit aliquam
+                        illo suscipit sunt architecto deleniti accusamus qui asperiores hic.</p>
+                </section>
+                <section class="education sect">
+                    <h2 class="right-title">Education</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatibus illum dicta ullam expedita, fuga dolorum provident consequuntur repudiandae modi placeat libero veniam at ut. Placeat excepturi, alias cum impedit aliquam
+                        illo suscipit sunt architecto deleniti accusamus qui asperiores hic.</p>
+                </section>
+                <section class="experience sect">
+                    <h2 class="right-title">Experience</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatibus illum dicta ullam expedita, fuga dolorum provident consequuntur repudiandae modi placeat libero veniam at ut. Placeat excepturi, alias cum impedit aliquam
+                        illo suscipit sunt architecto deleniti accusamus qui asperiores hic.</p>
+                </section>
+                <section class="projects">
+                    <h2 class="right-title">Projects</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatibus illum dicta ullam expedita, fuga dolorum provident consequuntur repudiandae modi placeat libero veniam at ut. Placeat excepturi, alias cum impedit aliquam
+                        illo suscipit sunt architecto deleniti accusamus qui asperiores hic.</p>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
